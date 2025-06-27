@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <title> Adam's Personal Website </title>
+    <link rel="shortcut icon" type="image/jpg" href="webicon.jpg"
+      />
+  </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="adam1.jpg" style="width:100%">
+  <div class="text">Perdana V6 Harith Danish</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="adam2.jpg" style="width:100%">
+  <div class="text">Kepantaian</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="adam3.jpg" style="width:100%">
+  <div class="text">Raya</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="adam4.jpg" style="width:100%">
+  <div class="text">Panda</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="adam5.jpg" style="width:100%">
+  <div class="text">Cermin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="adam6.jpg" style="width:100%">
+  <div class="text">Ikea</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
+
+
+    <div id="seconddivision" style="height:300px; margin:100px;">
+      <h1 style="font-family:verdana, sans-serif; font-size:40px;"> a little bit about Adam </h1>
+      <p style="font-family:verdana, sans-serif; line-height: 2.0; font-size:18px;">Hailing from Shah Alam, Selangor, Adam Haikal is someone who finds joy in the little adventures of life. He lives life full of energy and curiosity, whether it's hiking up beautiful trails, supporting his favourite Tottenham Hotspurs football team, or simply enjoying music and games. One thing is obvious is that he enjoys taking pictures of his car and posting them to social media. On weekends, you might see him walking through KL shopping malls and his friend is started calling him "bro lives in the mall". He is currently studying at UiTM Rembau to complete his diploma. One of his dreams? To build up his strength and stamina for a 10km run. A challenge he’s ready to face, one step at a time.
+    </div>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+
+@media screen and (max-width: 20px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+
+<h1 style="text-align: center; font-family: arial, sans-serif;">Educational Background</h1>
+<p></p>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="sk7.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2 style="font-family: arial, sans-serif;">SK Seksyen 7, Shah Alam</h2>
+        <p class="title">Primary School</p>
+        <p>UPSR</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="smk.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2 style="font-family: arial, sans-serif;">SMK Seksyen 7, Shah Alam</h2>
+        <p style="font-family: arial, sans-serif;"> Secondary School </style></p>
+        <p style="font-family: arial, sans-serif;"> SPM </style></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="uitm.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2 style="font-family: arial, sans-serif;">UiTM, Kampus Rembau</h2>
+        <p style="font-family: arial, sans-serif;"> University </style></p>
+        <p>Diploma in Information Management</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id ="thirddivision" style="height:400px; margin:100px;">
+      <h1 style="font-family:verdana, sans-serif; font-size:40px;"> Adam Haikal's Educational Journey </h1>
+      <p style="font-family:verdana, sans-serif; line-height: 2.0; font-size:18px;">At SK Seksyen 7, Adam Haikal started his studies, building the groundwork for his curiosity and motivation.  After that, he developed further and discovered his potential at SMK Seksyen 7, making his way through high school with strength and ambition.
+
+      Adam is now nearing the end of his diploma program at Universiti Teknologi MARA, Campus Rembau, where he is studying for a diploma in information management.  He is in his fifth and last semester, working smoothly for graduation, and is prepared to move forward with passion and knowledge.</p>
+         
+    </div>
+         
+
+</body>
+</html>
+
+
+<link rel="stylesheet" href="about me.css">
+<body>
+  <div class="container">
+    <div class="info-card">
+      <h2>Information</h2>
+      <table>
+        <tr><th>Name</th><td>Adam Haikal Bin Mohd Johan Arif</td></tr>
+        <tr><th>Birthday</th><td>May 10, 2004</td></tr>
+        <tr><th>Phone</th><td>+60 134232113</td></tr>
+        <tr><th>Email</th><td>adamjohanarief@gmail.com</td></tr>
+      </table>
+    </div>
+
+
+    <div class="stats">
+      <div class="stat"><h1>8</h1><p>Goals in Chengkau League</p></div>
+      <div class="stat"><h1>11</h1><p>Assists in Chengkau League</p></div>
+      <div class="stat"><h1>24</h1><p>Aces in Valorant</p></div>
+      <div class="stat"><h1>65,723</h1><p>Hours in Spotify 2024</p></div>
+    </div>
+  </div>
+</body>
+
+
+
+
+<link rel="stylesheet" href="style1.css">
+<header>
+  <input type='checkbox' id='toggle' style='display:none;' />
+  <label class='toggle-btn toggle-btn__cross' for='toggle'>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about me.html">About Me</a></li>
+      <li><a href="work.html">Work Experiences</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <body style="margin:0;">
+
